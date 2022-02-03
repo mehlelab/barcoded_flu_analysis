@@ -27,10 +27,8 @@ for file in Path(folder).glob('*/*barcodes_clean.txt'):
 
 #We use the UMI-Tools adjacency clustering methods (doi: 10.1101/gr.209601.116; Smith, et al. 2017)
 
+
 clusterer = UMIClusterer(cluster_method="adjacency")
-
-
-folder='data_output/'
 
 for file in Path(folder).glob('*/*barcodes_clean.csv'):
     new_data = pd.read_csv(file, sep=',')
@@ -65,5 +63,4 @@ for file in Path(folder).glob('*/*barcodes_clean.csv'):
     clusters_final = clusters_final.sort_values(by=["frequency (%)"], ascending=False)
     clusters_final.to_csv(file.with_suffix('.csv'), index = False)
     
-
 #Output will be a csv file with clustered barcodes, read counts and relative frequencies
