@@ -10,7 +10,7 @@ Barry, G.L. and Koelle, K., Schultz-Cherry, S., Friedrich, T.C., Mehle, A., 2021
 
 This repository stores the scripts used to obtain and analyze [barcode](https://github.com/haddocksoto/barcoded_flu_analysis/tree/main/amplicon_sequencing) and [whole genome sequences](https://github.com/haddocksoto/barcoded_flu_analysis/tree/main/whole_genome_sequencing) from our barcoded **Influenza A Virus** study. 
 
-The generation of barcodes and barcode frequencies from paired end fastq files (Illumina) were obtained using:
+The generation of barcodes and barcode frequencies from paired end fastq files (Illumina) were obtained using the following packages:
 - Merged ([BBTools](https://jgi.doe.gov/data-and-tools/bbtools/))
 - Mapped ([BBTools](https://jgi.doe.gov/data-and-tools/bbtools/))
 - Trimmed ([BBTools](https://jgi.doe.gov/data-and-tools/bbtools/))
